@@ -31,7 +31,7 @@ export default function Home() {
               </div>
             </div>{" "}
             <div className={`flex flex-row items-center gap-3`}>
-              <div class="w-6 h-6 rounded-full border border-blue-50 flex justify-center items-center">
+              <div className="w-6 h-6 rounded-full border border-blue-50 flex justify-center items-center">
                 <p className={`text-blue-50 font-semibold text-xs`}>3</p>
               </div>
               <div>
@@ -56,19 +56,25 @@ export default function Home() {
             </div>
             <div className="mt-10">
               <form className="flex flex-col" action="">
-                <label htmlFor="Name" className={`font-semibold text-gray-900 text-sm`}>
-                  Name
-                </label>
-                <input type="text" name="" className={`border border-gray-200 rounded-md mb-5`} />
-                <label htmlFor="Email address" className={`font-semibold text-gray-900 text-sm`}>
-                  Email address
-                </label>
-                <input type="text" name="" className={`border border-gray-200 rounded-md mb-5`} />
-                <label htmlFor="Phone Number" className={`font-semibold text-gray-900 text-sm`}>
-                  Phone Number
-                </label>
-                <input type="text" className={`border border-gray-200 rounded-md mb-5`} />
-                <input type="submit" value="Next step" className={`bg-blue-900 max-w-min text-white self-end mt-10 text-sm font-semibold px-4 py-2 rounded-md`} />
+                <div className={`flex flex-col`}>
+                  <label htmlFor="Name" className={`font-semibold text-gray-900 text-sm`}>
+                    Name
+                  </label>
+                  <input type="text" name="" className={`border border-gray-200 rounded-md mb-5`} />
+                </div>
+                <div className={`flex flex-col`}>
+                  <label htmlFor="Email address" className={`font-semibold text-gray-900 text-sm`}>
+                    Email address
+                  </label>
+                  <input type="text" name="" className={`border border-gray-200 rounded-md mb-5`} />
+                </div>
+                <div className={`flex flex-col`}>
+                  <label htmlFor="Phone Number" className={`font-semibold text-gray-900 text-sm`}>
+                    Phone Number
+                  </label>
+                  <input type="text" className={`border border-gray-200 rounded-md mb-5`} />
+                </div>
+                <button type="submit" className={`bg-blue-900 max-w-min text-white self-end mt-10 text-sm font-semibold px-4 py-2 rounded-md`}></button>
               </form>
             </div>
           </div>
